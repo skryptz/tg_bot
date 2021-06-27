@@ -172,13 +172,19 @@ def burn(update, context):
 tokennomics_handler = CommandHandler('burn', burn)
 dispatcher.add_handler(tokennomics_handler)
 
-#rules
-def rules(update, context):
+# Detailed list of rules
+def rules_detailed(update, context):
  	context.bot.send_message(chat_id=update.effective_chat.id, text="""\nPUSSC Rules: \n \nTo Our PussyCredit Community\, \n \n The main goal of this group is to support the PussyCredit community to provide room for discussion and education\. Members of this community that resist to follow the rules below might be permanently banned from the group\. \n • Respect all members in the chat\. Any form of threats\, bullying or harassing members and\/or admins will not be tolerated\. \n • No text bombing\. Do not spam messages\. If you want to make a statement\, then do this with one message\. You are allowed to post the same message after a certain amount of time\. \n • The moderators have all rights to ban any individual who spreads negativity in comments related to PussyCredit\. Please note\, this does not mean we cannot be open to constructive criticism and\/or feedback\. \n • Always try to help the moderator by abiding any rules or requests being made for the benefit of the forum\. Keep in mind that everything we do is for your benefit as well\. \n • Spamming\, solicitations\, or advertisement is not allowed\. Links unrelated to PussyCredit will be deleted and you will receive a first warning\.  \n • It is not allowed to post photos or content that contain violence\, fear\, hate or questionable content that might make people feel uncomfortable\. \n • We are always open to tough\/honest questions and we will try to answer as resolute as possible\. But if you intentionally start creating FUD\, rumors without facts or drama will not be tolerated\.  \n \n PUSSC is a community memecoin\, and you are all welcome to share with other members any information they request\, if that information has been released as accurate information\. We are all here to help each other grow this community\, and at the same time\, have fun doing it\. \n \n NOTE \: The moderators and developers of PussyCredit will NEVER ask a member for confidential information like passwords or recovery phrases\. Keep it safe everyone\! If you ever experience this in our chat\, please notify us so we can get the person involving banned\. \n \n \n Penalty system \: \n While trying to maintain our community and helping each other we also provide second chances to people that misbehave\. We know that sometimes we forget these things and therefore we have one more important rule \: \n • Disobeying one of the rules written above will result as followed \: \n We will warn you two times\. When you get warned for the third time you will be banned\. \n /help for more info\.""", parse_mode='MarkdownV2')
+
+rules_detailed_handler = CommandHandler('rules_detailed', rules_detailed)
+dispatcher.add_handler(rules_detailed_handler)
+
+# summary of rules
+def rules(update, context):
+	context.bot.send_message(chat_id=update.effective_chat.id, text="""To Our PussyCredit Community\, \n The main goal of this group is to support the PussyCredit community to provide room for discussion and education\. Members of this community that resist to follow the rules below might be permanently banned from the group\. \n \n• Respect all members in chat 🤝 🤝\n• No text bombing\, no spamming 📝 💣 🚫 \n• The moderators have all rights to ban any individual that spreads negativity related to Pussycredit 🚫 \n• Always try to help a moderator by abiding any rules or requests ✅ 📝 ✅ \n• Solicitations\, spamming\, or advertisement are not allowed ❌ \n• Photos containing violence\, fear\, hate\, or questionable content is not allowed 📷 🔫 🗡 🚫 \n• Do not FUD or create rumors without facts\. We are always open to tough questions and will answer them as resolute as possible\. 👨‍🚀 \n \n While trying to maintain our community and helping each other we also provide second chances to people that misbehave\. We have one more important rule : \n \n• Disobeying one of the rules written above will result as followed: \n \nWe will warn you two times\. When you get warned for the third time you will be banned\.  ⚠️⚠️⚠️ \= 🚫 \n \n/rules\_detailed for more info\.""", parse_mode='MarkdownV2')
 
 rules_handler = CommandHandler('rules', rules)
 dispatcher.add_handler(rules_handler)
-
 
 ## ----- Commands Help List ----- ##
 
