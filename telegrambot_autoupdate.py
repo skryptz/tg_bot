@@ -77,7 +77,7 @@ def announcements(context: CallbackContext):
 # uniswap_v2
 def uniswap_link(update, context):
 	context.bot.send_message(chat_id=update.effective_chat.id,
-		text="[https://app.uniswap.org/#/swap?outputCurrency=0xf184cdf2f96e21f4907b069ab85fb23f4b65ce7b&use=V2](https://app.uniswap.org/#/swap?outputCurrency=0xf184cdf2f96e21f4907b069ab85fb23f4b65ce7b&use=V2)",
+		text="[ https://app\.uniswap\.org/\#/swap?outputCurrency\=0xf184cdf2f96e21f4907b069ab85fb23f4b65ce7b\&use\=V2](https://app.uniswap.org/#/swap?outputCurrency=0xf184cdf2f96e21f4907b069ab85fb23f4b65ce7b&use=V2)",
 		parse_mode='MarkdownV2')
 
 uniswap_link_handler = CommandHandler('uniswap', uniswap_link)
@@ -86,7 +86,7 @@ dispatcher.add_handler(uniswap_link_handler)
 # etherscan
 def etherscan(update, context):
 	context.bot.send_message(chat_id=update.effective_chat.id,
-		text="[https://etherscan.io/token/0xf184cdf2f96e21f4907b069ab85fb23f4b65ce7b](https://etherscan.io/token/0xf184cdf2f96e21f4907b069ab85fb23f4b65ce7b)",
+		text="[https://etherscan\.io/token/0xf184cdf2f96e21f4907b069ab85fb23f4b65ce7b](https://etherscan.io/token/0xf184cdf2f96e21f4907b069ab85fb23f4b65ce7b)",
 		parse_mode='MarkdownV2')
 
 etherscan_handler = CommandHandler('etherscan', etherscan)
@@ -102,7 +102,7 @@ dispatcher.add_handler(contract_handler)
 # coinmarketcap
 def cmc(update, context):
 	context.bot.send_message(chat_id=update.effective_chat.id,
-		text="[https://coinmarketcap.com/currencies/pussycredit/](https://coinmarketcap.com/currencies/pussycredit/)",
+		text="[https://coinmarketcap\.com/currencies/pussycredit/](https://coinmarketcap.com/currencies/pussycredit/)",
 		parse_mode='MarkdownV2')
 
 cmc_handler = CommandHandler('cmc', cmc)
@@ -119,7 +119,7 @@ dispatcher.add_handler(cg_handler)
 # chart
 def chart(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id,
-    	text="[https://www.dextools.io/app/uniswap/pair-explorer/0x5277c3195801fd4acc92ebfd939024f08cfb697a](https://www.dextools.io/app/uniswap/pair-explorer/0x5277c3195801fd4acc92ebfd939024f08cfb697a)",
+    	text="[https://www\.dextools\.io/app/uniswap/pair\-explorer/0x5277c3195801fd4acc92ebfd939024f08cfb697a](https://www.dextools.io/app/uniswap/pair-explorer/0x5277c3195801fd4acc92ebfd939024f08cfb697a)",
     	parse_mode='MarkdownV2')
 
 chart_handler = CommandHandler('chart', chart)
@@ -128,7 +128,7 @@ dispatcher.add_handler(chart_handler)
 # website
 def website(update, context):
 	context.bot.send_message(chat_id=update.effective_chat.id,
-		text = "[https://www.pussycredit.com](https://www.pussycredit.com)",
+		text = "[https://www\.pussycredit\.com](https://www.pussycredit.com)",
 		parse_mode='MarkdownV2')
 
 website_handler = CommandHandler('website', website)
@@ -137,7 +137,7 @@ dispatcher.add_handler(website_handler)
 # twitter
 def twitter(update, context):
 	context.bot.send_message(chat_id=update.effective_chat.id,
-		text="[https://twitter.com/PussyCredit](https://twitter.com/PussyCredit)")
+		text="[https://twitter\.com/PussyCredit](https://twitter.com/PussyCredit)")
 
 twitter_handler = CommandHandler('twitter', twitter)
 dispatcher.add_handler(twitter_handler)
@@ -166,7 +166,7 @@ dispatcher.add_handler(lambo_handler)
 
 # tokenomics
 def burn(update, context):
-    context.bot.send_message(chat_id=update.effective_chat.id, text="[https://etherscan.io/token/0xf184cdf2f96e21f4907b069ab85fb23f4b65ce7b?a=0x000000000000000000000000000000000000dead](https://etherscan.io/token/0xf184cdf2f96e21f4907b069ab85fb23f4b65ce7b?a=0x000000000000000000000000000000000000dead)",
+    context.bot.send_message(chat_id=update.effective_chat.id, text="[https://etherscan\.io/token/0xf184cdf2f96e21f4907b069ab85fb23f4b65ce7b?a\=0x000000000000000000000000000000000000dead](https://etherscan.io/token/0xf184cdf2f96e21f4907b069ab85fb23f4b65ce7b?a=0x000000000000000000000000000000000000dead)",
     	parse_mode='MarkdownV2')
 
 tokennomics_handler = CommandHandler('burn', burn)
@@ -184,7 +184,7 @@ dispatcher.add_handler(rules_handler)
 
 def list_command(update, context):
 	context.bot.send_message(chat_id=update.effective_chat.id,
-		text="Pussy Credit \n 100% Community Owned Token. /Rules for telegram rules and guidelines. /help for more info. \n ________ \n Commands List \n ________ \n 🚀 * /uniswap \n 👌 * /etherscan \n 👀 * /contract \n 🔍 * /chart \n 🔞 * /website \n 🐤 * /twitter \n 💹  * /cmc \n ________  \n * /whencg \n * /whenmoon \n * /whenlisting \n * /burn ")
+		text="Pussy Credit \n 100% Community Owned Token. \n /Rules for telegram rules and guidelines. /help for more info. \n ________ \n Commands List \n ________ \n 🚀 * /uniswap \n 👌 * /etherscan \n 👀 * /contract \n 🔍 * /chart \n 🔞 * /website \n 🐤 * /twitter \n 💹  * /cmc \n ________  \n * /whencg \n * /whenmoon \n * /whenlisting \n * /burn ")
 
 help_handler = CommandHandler('help', list_command)
 dispatcher.add_handler(help_handler)
@@ -197,7 +197,7 @@ dispatcher.add_handler(unknown_handler)
 
 ## ----- Job Updater ----- ##
 
-j.run_repeating(announcements, interval=1200, first=10)
+j.run_repeating(announcements, interval=600, first=10)
 
 updater.start_polling()
 updater.idle()
