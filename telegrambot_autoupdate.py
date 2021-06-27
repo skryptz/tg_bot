@@ -26,7 +26,7 @@ def start(update, context):
     user_name = update.message.from_user.name
     r.set(user_name, user_id)
 
-    message = 'Welcome to the bot'
+    message = 'Welcome to Pussy Credit. Type /help for more info.'
     context.bot.send_message(chat_id=update.effective_chat.id, text=message)
 
 start_handler = CommandHandler('start', start)
@@ -77,7 +77,7 @@ def announcements(context: CallbackContext):
 # uniswap_v2
 def uniswap_link(update, context):
 	context.bot.send_message(chat_id=update.effective_chat.id,
-		text="[Uniswap](https://app.uniswap.org/#/swap?outputCurrency=0xf184cdf2f96e21f4907b069ab85fb23f4b65ce7b&use=V2)",
+		text="[https://app.uniswap.org/#/swap?outputCurrency=0xf184cdf2f96e21f4907b069ab85fb23f4b65ce7b&use=V2](https://app.uniswap.org/#/swap?outputCurrency=0xf184cdf2f96e21f4907b069ab85fb23f4b65ce7b&use=V2)",
 		parse_mode='MarkdownV2')
 
 uniswap_link_handler = CommandHandler('uniswap', uniswap_link)
@@ -86,7 +86,7 @@ dispatcher.add_handler(uniswap_link_handler)
 # etherscan
 def etherscan(update, context):
 	context.bot.send_message(chat_id=update.effective_chat.id,
-		text="[Etherscan](https://etherscan.io/token/0xf184cdf2f96e21f4907b069ab85fb23f4b65ce7b)",
+		text="[https://etherscan.io/token/0xf184cdf2f96e21f4907b069ab85fb23f4b65ce7b](https://etherscan.io/token/0xf184cdf2f96e21f4907b069ab85fb23f4b65ce7b)",
 		parse_mode='MarkdownV2')
 
 etherscan_handler = CommandHandler('etherscan', etherscan)
@@ -102,7 +102,7 @@ dispatcher.add_handler(contract_handler)
 # coinmarketcap
 def cmc(update, context):
 	context.bot.send_message(chat_id=update.effective_chat.id,
-		text="[CoinMarketCap](https://coinmarketcap.com/currencies/pussycredit/)",
+		text="[https://coinmarketcap.com/currencies/pussycredit/](https://coinmarketcap.com/currencies/pussycredit/)",
 		parse_mode='MarkdownV2')
 
 cmc_handler = CommandHandler('cmc', cmc)
@@ -119,7 +119,7 @@ dispatcher.add_handler(cg_handler)
 # chart
 def chart(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id,
-    	text="[Dextools Chart](https://www.dextools.io/app/uniswap/pair-explorer/0x5277c3195801fd4acc92ebfd939024f08cfb697a)",
+    	text="[https://www.dextools.io/app/uniswap/pair-explorer/0x5277c3195801fd4acc92ebfd939024f08cfb697a](https://www.dextools.io/app/uniswap/pair-explorer/0x5277c3195801fd4acc92ebfd939024f08cfb697a)",
     	parse_mode='MarkdownV2')
 
 chart_handler = CommandHandler('chart', chart)
@@ -128,7 +128,7 @@ dispatcher.add_handler(chart_handler)
 # website
 def website(update, context):
 	context.bot.send_message(chat_id=update.effective_chat.id,
-		text = "[Website](https://www.pussycredit.com)",
+		text = "[https://www.pussycredit.com](https://www.pussycredit.com)",
 		parse_mode='MarkdownV2')
 
 website_handler = CommandHandler('website', website)
@@ -137,7 +137,7 @@ dispatcher.add_handler(website_handler)
 # twitter
 def twitter(update, context):
 	context.bot.send_message(chat_id=update.effective_chat.id,
-		text="[Twitter](https://twitter.com/PussyCredit)")
+		text="[https://twitter.com/PussyCredit](https://twitter.com/PussyCredit)")
 
 twitter_handler = CommandHandler('twitter', twitter)
 dispatcher.add_handler(twitter_handler)
@@ -166,7 +166,7 @@ dispatcher.add_handler(lambo_handler)
 
 # tokenomics
 def burn(update, context):
-    context.bot.send_message(chat_id=update.effective_chat.id, text="[Burn Address on Etherscan](https://etherscan.io/token/0xf184cdf2f96e21f4907b069ab85fb23f4b65ce7b?a=0x000000000000000000000000000000000000dead)",
+    context.bot.send_message(chat_id=update.effective_chat.id, text="[https://etherscan.io/token/0xf184cdf2f96e21f4907b069ab85fb23f4b65ce7b?a=0x000000000000000000000000000000000000dead](https://etherscan.io/token/0xf184cdf2f96e21f4907b069ab85fb23f4b65ce7b?a=0x000000000000000000000000000000000000dead)",
     	parse_mode='MarkdownV2')
 
 tokennomics_handler = CommandHandler('burn', burn)
@@ -174,10 +174,11 @@ dispatcher.add_handler(tokennomics_handler)
 
 #rules
 def rules(update, context):
-	context.bot.send_message(chat_id=update.effective_chat.id, text="Insert Rules here )")
+ 	context.bot.send_message(chat_id=update.effective_chat.id, text="""\nPUSSC Rules: \n \nTo Our PussyCredit Community\, \n \n The main goal of this group is to support the PussyCredit community to provide room for discussion and education\. Members of this community that resist to follow the rules below might be permanently banned from the group\. \n • Respect all members in the chat\. Any form of threats\, bullying or harassing members and\/or admins will not be tolerated\. \n • No text bombing\. Do not spam messages\. If you want to make a statement\, then do this with one message\. You are allowed to post the same message after a certain amount of time\. \n • The moderators have all rights to ban any individual who spreads negativity in comments related to PussyCredit\. Please note\, this does not mean we cannot be open to constructive criticism and\/or feedback\. \n • Always try to help the moderator by abiding any rules or requests being made for the benefit of the forum\. Keep in mind that everything we do is for your benefit as well\. \n • Spamming\, solicitations\, or advertisement is not allowed\. Links unrelated to PussyCredit will be deleted and you will receive a first warning\.  \n • It is not allowed to post photos or content that contain violence\, fear\, hate or questionable content that might make people feel uncomfortable\. \n • We are always open to tough\/honest questions and we will try to answer as resolute as possible\. But if you intentionally start creating FUD\, rumors without facts or drama will not be tolerated\.  \n \n PUSSC is a community memecoin\, and you are all welcome to share with other members any information they request\, if that information has been released as accurate information\. We are all here to help each other grow this community\, and at the same time\, have fun doing it\. \n \n NOTE \: The moderators and developers of PussyCredit will NEVER ask a member for confidential information like passwords or recovery phrases\. Keep it safe everyone\! If you ever experience this in our chat\, please notify us so we can get the person involving banned\. \n \n \n Penalty system \: \n While trying to maintain our community and helping each other we also provide second chances to people that misbehave\. We know that sometimes we forget these things and therefore we have one more important rule \: \n • Disobeying one of the rules written above will result as followed \: \n We will warn you two times\. When you get warned for the third time you will be banned\. \n /help for more info\.""", parse_mode='MarkdownV2')
 
 rules_handler = CommandHandler('rules', rules)
 dispatcher.add_handler(rules_handler)
+
 
 ## ----- Commands Help List ----- ##
 
