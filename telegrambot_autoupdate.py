@@ -56,13 +56,11 @@ dispatcher.add_handler(wake_handler)
 
 ## ---- Commands ---- ##
 
-#def announcement(context: telegram.ext.CallbackContext):
-#    message = "Hello, this message will be sent in intervals"
-#    
-#    # send message to all users
-#    for keys in db_keys:
-#        id = r.get(keys).decode("UTF-8")
-#        context.bot.send_message(chat_id=id, text=message)
+def announcements(context: CallbackContext):   
+   # send message to all users
+   for keys in db_keys:
+       id = r.get(keys).decode("UTF-8")
+       context.bot.send_message(chat_id=id, text="""Pussy Credit Info Bot \n \n /help for more commands \n \n /Rules"""+"\n [Dextools Chart](https://www.dextools.io/app/uniswap/pair-explorer/0x5277c3195801fd4acc92ebfd939024f08cfb697a)", parse_mode='MarkdownV2')
 
 # ----- Admins / Mods ----- #
 # def get_admins(update, context):
