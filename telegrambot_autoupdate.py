@@ -1,7 +1,7 @@
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 from telegram import ParseMode
 
-updater = Updater(token='1890564401:AAFu8gyFvFK1McNtxMYLgNqfL7udZg3csvc', use_context=True)
+updater = Updater(token='1783032632:AAFwfGu2SU464Fx43j6kbfuhn41DQglwUQo', use_context=True)
 dispatcher = updater.dispatcher
 j = updater.job_queue
 
@@ -47,11 +47,11 @@ dispatcher.add_handler(wake_handler)
 
 ## --- Loose Announcement --- ##
 
-def announcements(context: CallbackContext):
-	context.bot.send_message(chat_id='-516827311',
-		text="""/help for more commands \n ________________ \n PussyCredit \n /Rules\."""+ 
-		"\n [Dextools Chart](https://www.dextools.io/app/uniswap/pair-explorer/0x5277c3195801fd4acc92ebfd939024f08cfb697a)",
-    	parse_mode='MarkdownV2')
+# def announcements(context: CallbackContext):
+# 	context.bot.send_message(chat_id='-516827311',
+# 		text="""/help for more commands \n ________________ \n PussyCredit \n /Rules\."""+ 
+# 		"\n [Dextools Chart](https://www.dextools.io/app/uniswap/pair-explorer/0x5277c3195801fd4acc92ebfd939024f08cfb697a)",
+#     	parse_mode='MarkdownV2')
 
 
 ## ---- Commands ---- ##
