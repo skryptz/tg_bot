@@ -75,7 +75,7 @@ def announcements(context: CallbackContext):
 # uniswap_v2
 def uniswap_link(update, context):
 	context.bot.send_message(chat_id=update.effective_chat.id,
-		text="[ https://app\.uniswap\.org/\#/swap?outputCurrency\=0xf184cdf2f96e21f4907b069ab85fb23f4b65ce7b\&use\=V2](https://app.uniswap.org/#/swap?outputCurrency=0xf184cdf2f96e21f4907b069ab85fb23f4b65ce7b&use=V2)",
+		text="[ https://app\.uniswap\.org/\#/swap?outputCurrency\=0xA9d945559f6E799c3A4f4aa08DB9674f54DB3E80\&use\=V2](https://app.uniswap.org/#/swap?outputCurrency=0xf184cdf2f96e21f4907b069ab85fb23f4b65ce7b&use=V2)",
 		parse_mode='MarkdownV2')
 
 uniswap_link_handler = CommandHandler('uniswap', uniswap_link)
@@ -84,7 +84,7 @@ dispatcher.add_handler(uniswap_link_handler)
 # etherscan
 def etherscan(update, context):
 	context.bot.send_message(chat_id=update.effective_chat.id,
-		text="[https://etherscan\.io/token/0xf184cdf2f96e21f4907b069ab85fb23f4b65ce7b](https://etherscan.io/token/0xf184cdf2f96e21f4907b069ab85fb23f4b65ce7b)",
+		text="[https://etherscan\.io/token/0xA9d945559f6E799c3A4f4aa08DB9674f54DB3E80](https://etherscan.io/token/0xA9d945559f6E799c3A4f4aa08DB9674f54DB3E80)",
 		parse_mode='MarkdownV2')
 
 etherscan_handler = CommandHandler('etherscan', etherscan)
@@ -93,7 +93,7 @@ dispatcher.add_handler(etherscan_handler)
 # contract
 def contract(update, context):
 	context.bot.send_message(chat_id=update.effective_chat.id,
-		text="0xf184cdf2f96e21f4907b069ab85fb23f4b65ce7b")
+		text="0xA9d945559f6E799c3A4f4aa08DB9674f54DB3E80")
 
 contract_handler = CommandHandler('contract', contract)
 dispatcher.add_handler(contract_handler)
@@ -117,7 +117,7 @@ dispatcher.add_handler(cg_handler)
 # chart
 def chart(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id,
-    	text="[https://www\.dextools\.io/app/uniswap/pair\-explorer/0x5277c3195801fd4acc92ebfd939024f08cfb697a](https://www.dextools.io/app/uniswap/pair-explorer/0x5277c3195801fd4acc92ebfd939024f08cfb697a)",
+    	text="[www\.dextools\.io/app/uniswap/pair\-explorer/0x9a2fd1e2ac0ce181e409858068b00a9e5e665da8](https://www.dextools.io/app/uniswap/pair-explorer/0x9a2fd1e2ac0ce181e409858068b00a9e5e665da8)",
     	parse_mode='MarkdownV2')
 
 chart_handler = CommandHandler('chart', chart)
@@ -164,7 +164,7 @@ dispatcher.add_handler(lambo_handler)
 
 # tokenomics
 def burn(update, context):
-    context.bot.send_message(chat_id=update.effective_chat.id, text="[https://etherscan\.io/token/0xf184cdf2f96e21f4907b069ab85fb23f4b65ce7b?a\=0x000000000000000000000000000000000000dead](https://etherscan.io/token/0xf184cdf2f96e21f4907b069ab85fb23f4b65ce7b?a=0x000000000000000000000000000000000000dead)",
+    context.bot.send_message(chat_id=update.effective_chat.id, text="[https://etherscan\.io/token/0xA9d945559f6E799c3A4f4aa08DB9674f54DB3E80?a\=0x000000000000000000000000000000000000dead](https://etherscan.io/token/0xA9d945559f6E799c3A4f4aa08DB9674f54DB3E80?a=0x000000000000000000000000000000000000dead)",
     	parse_mode='MarkdownV2')
 
 tokennomics_handler = CommandHandler('burn', burn)
