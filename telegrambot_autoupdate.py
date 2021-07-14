@@ -126,7 +126,7 @@ dispatcher.add_handler(chart_handler)
 # website
 def website(update, context):
 	context.bot.send_message(chat_id=update.effective_chat.id,
-		text = "[https://www\.pussycredit\.com](https://www.pussycredit.com)",
+		text = "[http://pussycredit\.xyz/index\.html](http://pussycredit.xyz/index.html)",
 		parse_mode='MarkdownV2')
 
 website_handler = CommandHandler('website', website)
