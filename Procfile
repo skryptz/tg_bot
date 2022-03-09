@@ -1,1 +1,1 @@
-worker: python telegrambot_autoupdate.py
+worker: python script.py
